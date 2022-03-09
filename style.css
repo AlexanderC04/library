@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  word-wrap: break-word;
 }
 button * {
   pointer-events: none;
@@ -81,23 +82,33 @@ body {
   padding: 0.8rem;
   position: relative;
   box-shadow: #b8b8b8 0px 0px 1px 2px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
 .book__info {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   gap: 0.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  width: 90%;
 }
 .book__name {
   font-size: max(1.5rem, 2vw);
   font-weight: 600;
+  display: inline-block;
+  word-break: break-word;
 }
 .book__author {
   font-size: max(1.2rem, 1.5vw);
+  display: inline-block;
+  word-break: break-word;
 }
 .book__pages {
   font-size: max(1.2rem, 1.5vw);
+  display: inline-block;
+  word-break: break-word;
 }
 .book__status {
   font-size: max(1.2rem, 1.5vw);
@@ -107,6 +118,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
+  align-content: center;
   gap: 0.5rem;
 }
 .book__delete {
