@@ -10,7 +10,7 @@ Build of a full Library design. Practice project for JS constructor.
 
 #### Desktop
 
-![](images/screenshotdesktop2.png)
+![](images/screenshotdesktop.png)
 
 ### Links
 
