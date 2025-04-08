@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/favicon-AlexanderC_04.png" />
+    <title>Library | AlexanderC_04</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="library">
+    <header class="header library__header">
+      <nav class="header__nav">
+        <div class="header__logo">
+          <img
+            class="header__icon book-logo"
+            src="images/bookshelf.svg"
+            alt="Bookshelf"
+          />
+          <h1 class="header__title">Library</h1>
+        </div>
+        <div class="header__add-book">
+          <button class="btn__add-book">
+            <p>Add Book</p>
+            <img
+              class="header__icon add-book-logo"
+              src="images/book-plus.svg"
+              alt="Book plus icon"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bookshelf library_bookshelf">
+      <div class="bookshelf__container"></div>
+    </main>
+
+    <dialog class="form library__form">
+      <div class="form__close">
+        <button class="form__close-button">
+          <img src="images/close-circle.svg" alt="Close Circle Icon" />
+        </button>
+      </div>
+      <form method="dialog" class="form__container">
+        <h2 class="form__title">New Book</h2>
+        <div class="form__item">
+          <label class="form__label" for="title">Book Title:</label>
+          <input
+            class="form__input"
+            type="text"
+            id="title"
+            name="title"
+            required
+          />
+        </div>
+        <div class="form__item form__author">
+          <label class="form__label" for="author">Author Name:</label>
+          <input
+            class="form__input"
+            type="text"
+            id="author"
+            name="author"
+            required
+          />
+        </div>
+        <div class="form__item form__pages">
+          <label class="form__label" for="pages">Number of pages:</label>
+          <input
+            class="form__input"
+            type="number"
+            id="pages"
+            name="pagesNumber"
+            required
+          />
+        </div>
+
+        <div class="form__item form__status">
+          <input
+            type="checkbox"
+            id="status-read"
+            name="status"
+            class="form__input"
+          />
+          <label class="form__label" for="status-read">Read</label>
+        </div>
+
+        <button id="form-submit-btn" class="form__submit" type="submit">
+          Add book
+        </button>
+      </form>
+    </dialog>
+  </body>
+</html>
